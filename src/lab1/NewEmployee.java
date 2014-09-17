@@ -14,29 +14,32 @@ import lab1.Employee;
 public class NewEmployee {
 
     public NewEmployee() {
-         employee.firstName = "Peter";
-        employee.lastName = "Piper";
-        employee.ssn = "333-1234";
+        
+         
         
     }
 
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-    
-    public void setupEmployee{
+//    public Employee getEmployee() {
+//        
+//        return employee;
+//    }
+//
+//    public void setEmployee(Employee employee) {
+//        this.employee = employee;
+//    }
+//    
+    public Employee setupEmployee() {
       
     
      Employee employee = new Employee();
-       
+       employee.firstName = "Peter";
+        employee.lastName = "Piper";
+        employee.ssn = "333-1234";
         employee.meetWithHrForBenefitAndSalryInfo();
         employee.meetDepartmentStaff();
         
         employee.reviewDeptPolicies();
         employee.moveIntoCubicle("1");
+        return employee;
 }
 }
