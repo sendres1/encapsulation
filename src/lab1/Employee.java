@@ -3,14 +3,14 @@ package lab1;
 import java.util.Date;
 
 /**
- * In this lab your challenge is to fix the code in both classes to use
- * proper encapsulation and the other best practices as explained by 
- * your instructor.
+ * In this lab your challenge is to fix the code in both classes to use proper
+ * encapsulation and the other best practices as explained by your instructor.
  *
- * @author      Jim Lombardo, WCTC Instructor
- * @version     1.01
+ * @author Jim Lombardo, WCTC Instructor
+ * @version 1.01
  */
 public class Employee {
+
     String firstName;
     String lastName;
     public String ssn;
@@ -32,7 +32,7 @@ public class Employee {
 
     // Assume this is must be performed second
     public void meetDepartmentStaff() {
-        if(metWithHr) {
+        if (metWithHr) {
             metDeptStaff = true;
         } else {
             System.out.println("Sorry, you cannot meet with "
@@ -42,7 +42,7 @@ public class Employee {
 
     // Assume this must be performed third
     public void reviewDeptPolicies() {
-        if(metWithHr && metDeptStaff) {
+        if (metWithHr && metDeptStaff) {
             reviewedDeptPolicies = true;
         } else {
             System.out.println("Sorry, you cannot review "
@@ -53,7 +53,7 @@ public class Employee {
 
     // Assume this must be performed 4th
     public void moveIntoCubicle(String cubeId) {
-        if(metWithHr && metDeptStaff && reviewedDeptPolicies) {
+        if (metWithHr && metDeptStaff && reviewedDeptPolicies) {
             this.cubeId = cubeId;
             this.movedIn = true;
         } else {
@@ -66,8 +66,8 @@ public class Employee {
     }
 
     public String getStatus() {
-        if(metWithHr && metDeptStaff
-           && reviewedDeptPolicies && movedIn) {
+        if (metWithHr && metDeptStaff
+                && reviewedDeptPolicies && movedIn) {
             return "Orientation is complete";
         } else {
             return "Orientation in progress...";
