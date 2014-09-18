@@ -14,17 +14,19 @@ import lab1.Employee;
  */
 public class NewEmployee {
 
-    public NewEmployee() {
-
-    }
+  //  public NewEmployee(String f, String l, String s) {
+  //      Employee employee = new Employee(String "f", String "l", String "s");
+  //  }
 
 // 
     public Employee setupEmployee() {
 
+    //    Employee employee = null;
         Employee employee = new Employee();
-        employee.firstName = "Peter";
-        employee.lastName = "Piper";
-        employee.ssn = "333-1234";
+  //    Employee employee = new Employee(firstname, lastname, ssn);
+        employee.setFirstName("Peter");
+        employee.setLastName("Piper");
+        employee.setSsn("333-1234");
         employee.meetWithHrForBenefitAndSalryInfo();
         employee.meetDepartmentStaff();
 

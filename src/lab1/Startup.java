@@ -20,7 +20,7 @@ public class Startup {
          not have to be a GUI class.
          */
         Employee Peterpiper = new NewEmployee().setupEmployee();
-
+      //    Employee Peterpiper = new NewEmployee("p", "p" "s");
         System.out.println("The employee's status is: " + Peterpiper.getStatus());
     }
 
