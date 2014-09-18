@@ -70,14 +70,14 @@ public class Employee {
         this.cubeId = cubeId;
     }
 
-    // private methods
+    //* private methods
     // Assume this must be performed first
-    private void meetWithHrForBenefitAndSalryInfo() {
+    public void meetWithHrForBenefitAndSalryInfo() {
         metWithHr = true;
     }
 
     // Assume this is must be performed second
-    private void meetDepartmentStaff() {
+    public void meetDepartmentStaff() {
         if (metWithHr) {
             metDeptStaff = true;
         } else {
@@ -87,7 +87,7 @@ public class Employee {
     }
 
     // Assume this must be performed third
-    private void reviewDeptPolicies() {
+    public void reviewDeptPolicies() {
         if (metWithHr && metDeptStaff) {
             reviewedDeptPolicies = true;
         } else {
@@ -98,7 +98,7 @@ public class Employee {
     }
 
     // Assume this must be performed 4th
-    private void moveIntoCubicle(String cubeId) {
+    public void moveIntoCubicle(String cubeId) {
         if (metWithHr && metDeptStaff && reviewedDeptPolicies) {
             this.cubeId = cubeId;
             this.movedIn = true;

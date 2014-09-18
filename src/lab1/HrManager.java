@@ -15,20 +15,29 @@ import lab1.Employee;
 public class HrManager {
 
 //     private Employee new Employee;
-
+       private Employee employee;
 // 
-    public void OrientateEmployee() {
-  
-        Employee employee = new Employee();
+  //  public void orientateNewEmployee() {
+      public void orientateNewEmployee(String firstName, String lastName, String ssn) {
+  //      Employee employee = new Employee();
   //    Employee employee = new Employee(firstname, lastname, ssn);
-        employee.setFirstName("Peter");
-        employee.setLastName("Piper");
-        employee.setSsn("333-1234");
-        employee.meetWithHrForBenefitAndSalryInfo();
-        employee.meetDepartmentStaff();
+          Employee e1 = new Employee();
+        e1.setFirstName(firstName);
+        e1.setLastName(lastName);
+        e1.setSsn(ssn);
+   
+        e1.meetWithHrForBenefitAndSalryInfo();
+        e1.meetDepartmentStaff();
 
-        employee.reviewDeptPolicies();
-        employee.moveIntoCubicle("1");
-      
+        e1.reviewDeptPolicies();
+        e1.moveIntoCubicle("1");
+        
+     //   e1.doOrientation("A101");
+        employee = e1;
+    }
+ 
+    
+    public String getEmployeeStatus() {
+        return employee.getStatus();
     }
 }

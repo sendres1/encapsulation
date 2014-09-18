@@ -22,9 +22,10 @@ public class Startup {
     //    Employee Peterpiper = new NewEmployee().setupEmployee();
       //    Employee Peterpiper = new NewEmployee("p", "p" "s");
      //   Employee Peterpiper = HrManager.OrientateEmployee();
-        HrManager.OrientateEmployee();
+        HrManager.orientateNewEmployee("Peter","Piper","333-33-1234" );
         
-        System.out.println("The employee's status is: " + Peterpiper.getStatus());
+//        HrManager.
+        System.out.println("The employee's status is: " + HrManager.getEmployeeStatus());
     }
 
 }
