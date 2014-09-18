@@ -12,16 +12,13 @@ import lab1.Employee;
  *
  * @author sendres1
  */
-public class NewEmployee {
+public class HrManager {
 
-  //  public NewEmployee(String f, String l, String s) {
-  //      Employee employee = new Employee(String "f", String "l", String "s");
-  //  }
+//     private Employee new Employee;
 
 // 
-    public Employee setupEmployee() {
-
-    //    Employee employee = null;
+    public void OrientateEmployee() {
+  
         Employee employee = new Employee();
   //    Employee employee = new Employee(firstname, lastname, ssn);
         employee.setFirstName("Peter");
@@ -32,6 +29,6 @@ public class NewEmployee {
 
         employee.reviewDeptPolicies();
         employee.moveIntoCubicle("1");
-        return employee;
+      
     }
 }
