@@ -34,6 +34,8 @@ public class HrManager {
         
      //   e1.doOrientation("A101");
         employee = e1;
+        
+        
     }
  
     
