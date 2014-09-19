@@ -33,11 +33,13 @@ public class HrManager {
         e1.moveIntoCubicle("1");
         
      //   e1.doOrientation("A101");
+        System.out.println("The employee's status is: " + getEmployeeStatus());
         employee = e1;
         
         
     }
  
+      
     
     public String getEmployeeStatus() {
         return employee.getStatus();
